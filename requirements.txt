@@ -1,0 +1,5 @@
+beautifulsoup4==4.5.3
+Flask==0.12
+lxml==3.7.2
+requests==2.12.4
+textblob==0.12.0
