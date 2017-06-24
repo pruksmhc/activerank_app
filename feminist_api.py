@@ -54,10 +54,12 @@ def clamp_percent(number):
     return max(min(number, 50), 10)
 
 def fetch_url(address):
+
     # Parameters 
     # Address -  http address to fetch [string]
     # Output
     # JSON page
+
     request = urllib2.Request(address, None, {'User-Agent':'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)'} )
     urlfile = urllib2.urlopen(request)
     page = urlfile.read(200000000)
@@ -65,12 +67,14 @@ def fetch_url(address):
     return page
 
 def calculate_ranking(salary, percent, benefit):
+
     #  Parameters
     #  Salary - the pay gap [integer] 
     #  Percentage - percent of women in the workplace [integer]. 
     #  Benefit - number of weeks paid maternity leave [integer] 
     #  Output
     #  Rankings [integer]
+    
     national_avg = 0
     res = 0
     total = 1
